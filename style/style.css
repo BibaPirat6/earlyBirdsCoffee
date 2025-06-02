@@ -70,9 +70,18 @@ a {
   column-gap: 48px;
 }
 .header-menu-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   height: 100px;
+}
+.header-menu-link::after {
+  content: "";
+  position: absolute;
+  background: url(../icons/link-underline.svg) center/cover no-repeat;
+  height: 3px;
+  width: 53px;
+  bottom: 2em;
 }
 .header-logo {
   flex-shrink: 0;
